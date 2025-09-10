@@ -1,0 +1,194 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Reset básico e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* --- Estilização do Cabeçalho (Header) --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 30px; /* Ajuste o tamanho do logo conforme necessário */
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ff3366; /* Cor de destaque ao passar o mouse */
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #555;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff3366;
+}
+
+/* --- Estilização da Seção Principal (Main Content) --- */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Altura da tela menos o cabeçalho */
+    background-color: #ff3366; /* A cor de fundo vibrante da imagem */
+    color: #fff;
+    padding: 20px;
+    position: relative; /* Para posicionar os círculos */
+    overflow: hidden; /* Garante que os círculos não causem barra de rolagem */
+    text-align: center; /* Alinhamento padrão para mobile */
+    flex-direction: column;
+}
+
+/* Layout para telas maiores */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .info-container {
+        padding-left: 50px;
+    }
+}
+
+.phone-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-image {
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinhar itens ao centro em telas pequenas */
+}
+
+/* Alinhamento à esquerda em telas maiores */
+@media (min-width: 768px) {
+    .info-container {
+        align-items: flex-start;
+    }
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Layout de download para telas maiores */
+@media (min-width: 768px) {
+    .download-section {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.download-link img {
+    height: 50px;
+}
+
+.qr-code img {
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Círculos decorativos */
+.circle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-1 {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: 20%;
+}
+
+.circle-2 {
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 15%;
+}
+
+.circle-3 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 5%;
+}
+
+/* --- Responsividade do Cabeçalho para telas menores --- */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+}
