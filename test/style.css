@@ -282,14 +282,15 @@ body {
 
 /* COMENTÁRIO: Para alterar o tamanho do texto da seção "Sobre Nós", modifique os valores abaixo */
 .sobre-nos h1 {
-    font-size: 70px; /* 20px maior que o padrão de 70px - ALTERE AQUI PARA MUDAR TAMANHO DO TÍTULO */
+    font-size: 90px; /* 20px maior que o padrão de 70px - ALTERE AQUI PARA MUDAR TAMANHO DO TÍTULO */
     color: #ffffff;
     text-align: center;
-    padding-bottom: 250px;
+    margin-bottom: 3rem;
+    padding: 0;
 }
 
-.sobre-nos-content p {
-    font-size: 30px; /* Diminuído de 50px para 35px - ALTERE AQUI PARA MUDAR TAMANHO DO TEXTO */
+.sobre-nos p {
+    font-size: 35px; /* Diminuído de 50px para 35px - ALTERE AQUI PARA MUDAR TAMANHO DO TEXTO */
     text-align: justify;
     color: #ffffff;
     line-height: 1.6;
@@ -323,7 +324,7 @@ body {
         font-size: 60px;
     }
     
-    .sobre-nos-content p {
+    .sobre-nos p {
         font-size: 25px; /* Ajustado para telas menores */
     }
     
