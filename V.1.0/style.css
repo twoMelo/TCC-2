@@ -114,7 +114,7 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .download-section {
@@ -129,8 +129,8 @@ body {
 }
 
 .qr-code img {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   background-color: transparent;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -168,20 +168,98 @@ body {
 
 /* ================= SERVIÇOS ================= */
 .servicos-content {
-  background-color: #ffffff;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* conteúdo à direita */
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 6rem 12rem;
 }
 
-.servicos-content h1 {
-  font-size: 70px;
-  color: #000000;
-  margin-bottom: 800px;
-  margin-left: 1250px;
+.servicos-texto {
+  max-width: 750px;
 }
+
+.servicos-title {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #FF0048;
+  margin-bottom: 10rem;
+  text-align: left;
+  margin-left: 250px;
+}
+
+.servicos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.servico-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.servico-item img {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+}
+
+.servico-item p {
+  font-size: 2.1rem;
+  color: #333;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1024px) {
+  .servicos-content {
+    justify-content: center;
+    padding: 5rem 6rem;
+  }
+
+  .servicos-title {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .servico-item img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .servico-item p {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicos-content {
+    padding: 3rem 2rem;
+  }
+
+  .servicos-title {
+    font-size: 4rem;
+  }
+
+  .servico-item {
+    gap: 1.5rem;
+  }
+
+  .servico-item img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .servico-item p {
+    font-size: 1.7rem;
+  }
+}
+
 
 /* ================= SOBRE NÓS ================= */
 .sobre-nos {
