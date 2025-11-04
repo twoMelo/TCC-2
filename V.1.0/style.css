@@ -215,6 +215,72 @@ body {
   max-width: 600px;
 }
 
+/* === IMAGEM AO LADO ESQUERDO NA SEÇÃO SERVIÇOS === */
+.servicos-content {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  padding: 8rem 12rem;
+}
+
+.telas {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.telas-img {
+  width: 900px;
+  max-width: none; /* remove o limite de tamanho */
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0);
+  transition: transform 0.4s ease;
+}
+
+
+.telas-img:hover {
+  transform: scale(1.05); /* leve zoom ao passar o mouse */
+}
+
+.servicos-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicos-title {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #FF0048;
+  margin-bottom: 6rem;
+  text-align: left;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 1024px) {
+  .servicos-content {
+    flex-direction: column;
+    padding: 6rem 3rem;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  .telas-img {
+    max-width: 90%;
+  }
+
+  .servicos-title {
+    font-size: 5rem;
+  }
+}
+
+
 /* ===== RESPONSIVO ===== */
 @media (max-width: 1024px) {
   .servicos-content {
@@ -259,6 +325,7 @@ body {
     font-size: 1.7rem;
   }
 }
+
 
 
 /* ================= SOBRE NÓS ================= */

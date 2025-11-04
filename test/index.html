@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tempos - Organização na Palma da Sua Mão</title>
+    <meta name="description" content="TEMPOS - Organize seu tempo e alcance seus objetivos com nosso aplicativo de gestão de tempo e tarefas">
     <link rel="icon" href="img/tempos-logo.jpg" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-static.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -24,70 +25,221 @@
                 <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
                 <li class="nav-item"><a href="#sobre-nos" class="nav-link">Sobre nós</a></li>
                 <li class="nav-item"><a href="#aplicativo" class="nav-link">Aplicativo</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
-            <section>
-    <main class="main-content">
-        <div class="phone-container">
-            <img src="img/celulares.png" alt="Celular com o app Tempos" class="phone-image">
-        </div>
-        <div class="info-container">
-            <div class="title-container">
-                <h1 class="title">
-                    TEMPOS. <br>
-                    ORGANIZAÇÃO <br>
-                    NA PALMA DA <br>
-                    SUA MÃO
-                </h1>   
+
+    <section id="home">
+        <main class="main-content">
+            <div class="phone-container">
+                <img src="img/celulares.png" alt="Celular com o app Tempos" class="phone-image">
             </div>
-            <div class="qr-code">
-                <img src="img/QR_Code_.png" alt="QR Code para download">
+            <div class="info-container">
+                <div class="title-container">
+                    <h1 class="title">
+                        TEMPOS. <br>
+                        ORGANIZAÇÃO <br>
+                        NA PALMA DA <br>
+                        SUA MÃO
+                    </h1>   
+                </div>
+                <div class="qr-code">
+                    <img src="img/QR_Code_.png" alt="QR Code para download do aplicativo">
+                </div>
             </div>
-        </div>
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-    </main>
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </main>
     </section>
     
     <!-- SEÇÃO DE SERVIÇOS -->
     <section id="servicos">
         <main class="servicos-content">
-            <h1>Serviços</h1>
+            <!-- IMAGEM À ESQUERDA -->
+            <div class="telas">
+                <img src="img/celular.png" alt="Tela do aplicativo Tempos" class="telas-img">
+            </div>
+
+            <!-- TEXTO À DIREITA -->
+            <div class="servicos-texto">
+                <h2 class="servicos-title">Serviços</h2>
+
+                <div class="servicos-lista">
+                    <div class="servico-item">
+                        <img src="img/icones/alvo.png" alt="Ícone de metas">
+                        <p>Crie metas específicas, mensuráveis, alcançáveis, relevantes e com prazo definido, com suporte para dividi-las em subtarefas.</p>
+                    </div>
+
+                    <div class="servico-item">
+                        <img src="img/icones/cronometro.png" alt="Ícone de cronômetro">
+                        <p>O Tempos oferece um cronômetro para estudos ou atividades do dia a dia.</p>
+                    </div>
+
+                    <div class="servico-item">
+                        <img src="img/icones/tarefa.png" alt="Ícone de planejamento">
+                        <p>Planeje tarefas diárias e semanais, com lembretes automáticos e controle de horários.</p>
+                    </div>
+
+                    <div class="servico-item">
+                        <img src="img/icones/relatorio.png" alt="Ícone de relatórios">
+                        <p>Visualize relatórios de desempenho com o tempo total estudado e metas concluídas.</p>
+                    </div>
+
+                    <div class="servico-item">
+                        <img src="img/icones/notificação.png" alt="Ícone de notificações">
+                        <p>Receba notificações inteligentes para lembrar das próximas sessões de estudo.</p>
+                    </div>
+                </div>
+            </div>
         </main>
     </section>
-    
-   <section id="sobre-nos">
-  <main>
-    <div class="sobre-nos">
-      <div class="sobre-nos-content">
-        <h1>Sobre Nós</h1>
-        <p>
-          O Tempos nasceu com a ideia de transformar a forma como as pessoas organizam suas rotinas, especialmente nos estudos. Sabemos que conciliar matérias, provas, trabalhos e objetivos pessoais pode ser desafiador, e é por isso que criamos uma ferramenta simples, intuitiva e eficiente para ajudar você a planejar o dia a dia.
-        </p>
 
-        <!-- Imagem central à direita do texto -->
-        <div class="imagem-central">
-          <img src="img/team.png" alt="Equipe Tempos">
-        </div>
+    <!-- SEÇÃO SOBRE NÓS -->
+    <section id="sobre-nos">
+        <main>
+            <div class="sobre-nos">
+                <div class="sobre-nos-content">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        O Tempos nasceu com a ideia de transformar a forma como as pessoas organizam suas rotinas, especialmente nos estudos. Sabemos que conciliar matérias, provas, trabalhos e objetivos pessoais pode ser desafiador, e é por isso que criamos uma ferramenta simples, intuitiva e eficiente para ajudar você a planejar o dia a dia.
+                    </p>
 
-        <p>
-          Mais do que um simples organizador, o Tempos é um aliado na sua jornada acadêmica, oferecendo praticidade na hora de estruturar tarefas, acompanhar o progresso e manter a disciplina necessária para alcançar suas metas. Nosso compromisso é tornar a gestão do tempo mais leve, equilibrada e eficaz, permitindo que você foque no que realmente importa: o aprendizado.
-        </p>
+                    <!-- Imagem central à direita do texto -->
+                    <div class="imagem-central">
+                        <img src="img/team.png" alt="Equipe Tempos">
+                    </div>
 
-        <p>
-          Com o Tempos, estudar se torna mais organizado, produtivo e motivador. Afinal, acreditamos que cada minuto bem planejado é um passo a mais rumo ao sucesso.
-        </p>
-      </div>
-    </div>
-  </main>
-</section>
+                    <p>
+                        Mais do que um simples organizador, o Tempos é um aliado na sua jornada acadêmica, oferecendo praticidade na hora de estruturar tarefas, acompanhar o progresso e manter a disciplina necessária para alcançar suas metas. Nosso compromisso é tornar a gestão do tempo mais leve, equilibrada e eficaz, permitindo que você foque no que realmente importa: o aprendizado.
+                    </p>
+
+                    <p>
+                        Com o Tempos, estudar se torna mais organizado, produtivo e motivador. Afinal, acreditamos que cada minuto bem planejado é um passo a mais rumo ao sucesso.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato">
+        <main class="contato-content">
+            <div class="deco-circle deco-circle-1"></div>
+            <div class="deco-circle deco-circle-2"></div>
+            <div class="deco-circle deco-circle-3"></div>
+
+            <h2 class="contato-title">Contate-<span>nos</span></h2>
+
+            <div class="contato-container">
+                <!-- Formulário de Contato -->
+                <div class="contato-form-wrapper">
+                    <form id="contact-form" class="contato-form">
+                        <div class="form-group">
+                            <label for="name">Seu nome*</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Seu Email*</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Seu Telefone*</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Sua mensagem*</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="contato-info">
+                    <h3>Info</h3>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>studio5@gmail.com</span>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+55 11 99999-9999</span>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua Van Race, 99</span>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>09:00 - 18:00</span>
+                        </div>
+                    </div>
+
+                    <div class="info-footer">
+                        <p>Estamos prontos para ajudar você a organizar seu tempo e alcançar seus objetivos!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <script>
+        // Validação do formulário
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // Validação
+            if (!name || !email || !phone || !message) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um email válido.');
+                return;
+            }
+
+            // Sucesso
+            alert('Mensagem enviada! Entraremos em contato em breve.');
+            this.reset();
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
